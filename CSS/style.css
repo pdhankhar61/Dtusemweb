@@ -8,3 +8,9 @@
     background-color: blue;
     height: 90px;
 }
+
+.sidebar{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+}
