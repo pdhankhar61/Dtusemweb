@@ -20,13 +20,51 @@ body {
 }
 
 .main div {
-  background-color: white;
+  background-color: black;
+  border-radius: 4px;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.hctaneja{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+.title,.download{
+  
+  all: unset !important;
+ 
+}
+
+.title p{
+  font-family: Arial, sans-serif;
+  font-weight: 800;
+  font-size: 40px;
+  color: white;
+  filter: drop-shadow( 0px 2px 3px rgba(0, 0, 0, 0.3));
+}
+
+.download button{
+
+  border: none;
+  border-radius: 3px;
+  color: white;
+  background-color: red;
+  padding: 5px;
+font-size: 20px;
+}
+.download button:hover{
+  padding: 12px;
 }
 
 
 .main div:hover{
 margin:-2px -2px -2px -2px;
+background-color: white;
+
 }
 
 /* to fix footer at foot*/
@@ -44,7 +82,7 @@ margin:-2px -2px -2px -2px;
 }
 
 .header {
-  background-color: white;
+  background-color: black;
   height: 90px;
   display: flex;
   flex-direction: row;
