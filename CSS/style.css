@@ -10,69 +10,7 @@ body {
 }
 .main {
   margin-top: 200px;
-  /* margin-bottom: -100px; to fix footer at foot */
-  min-height: 100%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
-  grid-auto-rows: 200px;
-  padding:0 100px 100px 100px;
-}
-
-.main div {
-  background-color: black;
-  border-radius: 4px;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
-}
-
-.hctaneja{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-
-
-.title,.download{
-
-  all: unset !important;
- 
-}
-
-.title p{
-  font-family: Arial, sans-serif;
-  font-weight: 800;
-  font-size: 40px;
-  color: white;
-  filter: drop-shadow( 0px 2px 3px rgba(0, 0, 0, 0.3));
-
-}
-
-.download button{
-
-  border: none;
-  border-radius: 3px;
-  color: white;
-  background-color: red;
-  padding: 5px;
-font-size: 20px;
-}
-.download button:hover{
-  padding: 12px;
-}
-
-
-.main div:hover{
-margin:-2px -2px -2px -2px;
-background-color: white;
-
-}
-
-/* to fix footer at foot*/
-.main::after {
-  content: "";
-  display: block;
-  height: 100px;
+  height: 100%;
 }
 
 .footer {
@@ -81,11 +19,11 @@ background-color: white;
   height: 100px;
   color: white;
   width: 100%;
-   display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-end;
-    padding: 0 0 10px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding: 0 0 10px 0;
 }
 
 .header {
@@ -97,7 +35,6 @@ background-color: white;
   justify-content: center;
   align-items: center;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
-  position: fixed;
   top: 0px;
   width: 100%;
   padding: 10px 0px 10px 0px;
@@ -107,31 +44,25 @@ h1 {
   color: white;
   font-family: Arial, sans-serif;
   font-size: 80px;
- filter: drop-shadow( 0px 2px 5px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(0px 2px 5px rgba(0, 0, 0, 0.3));
 }
 
+/* .sidebar{
+height: 100%;
+width: 200px;
+background-color: green;
+} */
 
+/* .mainContent {
+  height: 100%;
+  width: ;
+} */
 
-
-@media screen and (max-width:600px){
-
-  .main {
-  
-    grid-template-columns: repeat(1, 1fr);
- 
-  }
-  .title p{
-    font-family: Arial, sans-serif;
-    font-weight: 800;
-    font-size: 20px;
-  
-  }
-
-
+@media screen and (max-width: 600px) {
   h1 {
     color: white;
     font-family: Arial, sans-serif;
     font-size: 60px;
-    filter: drop-shadow( 0px 2px 5px rgba(0, 0, 0, 0.3));
+    filter: drop-shadow(0px 2px 5px rgba(0, 0, 0, 0.3));
   }
 }
